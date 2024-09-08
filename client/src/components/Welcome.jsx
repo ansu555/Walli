@@ -62,7 +62,7 @@ const Welcome = () => {
             </div>
             <div className={companyCommonStyles}>Security</div>
             <div className={`sm:rounded-tr-2xl ${companyCommonStyles}`}>
-              Edu Chain
+               Linea ETH            
             </div>
             <div className={`sm:rounded-bl-2xl ${companyCommonStyles}`}>
               Web 3.0
@@ -79,7 +79,7 @@ const Welcome = () => {
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
-                <img src="../../images/educahin.png" alt="Blockchain Logo" style={{ width: 21, height: 21, color: '#fff' }} />
+                <img src="../../images/linea.png" alt="Blockchain Logo" style={{ width: 21, height: 21, color: '#fff' }} />
                 </div>
                 <BsInfoCircle fontSize={17} color="#fff" />
               </div>
@@ -95,7 +95,7 @@ const Welcome = () => {
           </div>
           <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
             <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
-            <Input placeholder="Amount (EDU)" name="amount" type="number" handleChange={handleChange} />
+            <Input placeholder="Amount (Linea ETH)" name="amount" type="number" handleChange={handleChange} />
             <Input placeholder="Keyword (Gif)" name="keyword" type="text" handleChange={handleChange} />
             <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
 
