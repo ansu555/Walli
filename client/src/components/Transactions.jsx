@@ -20,10 +20,10 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
     >
       <div className="flex flex-col items-center w-full mt-3">
         <div className="display-flex justify-start w-full mb-6 p-2">
-          <a href={`https://opencampus-codex.blockscout.com/address${addressFrom}`} target="_blank" rel="noreferrer">
+          <a href={`https://sepolia.lineascan.build/address${addressFrom}`} target="_blank" rel="noreferrer">
             <p className="text-white text-base">From: {shortenAddress(addressFrom)}</p>
           </a>
-          <a href={`https://opencampus-codex.blockscout.com/address${addressTo}`} target="_blank" rel="noreferrer">
+          <a href={`https://sepolia.lineascan.build/address${addressTo}`} target="_blank" rel="noreferrer">
             <p className="text-white text-base">To: {shortenAddress(addressTo)}</p>
           </a>
           <p className="text-white text-base">Amount: {amount} ETH</p>
@@ -64,7 +64,7 @@ const Transactions = () => {
         )}
 
         <div className="flex flex-wrap justify-center items-center mt-10">
-          {[...dummyData, ...transactions].reverse().map((transaction, i) => (
+          {[, ...transactions].reverse().map((transaction, i) => (
             <TransactionsCard key={i} {...transaction} />
           ))}
         </div>
